@@ -87,24 +87,29 @@ p {
   opacity: 50%;
 }
 
-.col-xs-12 button{
-  height: 30px;
-  width: 50px;
-  font-size: .9em;
+@media(max-width: 767px) {
+  .col-xs-12 button{
+    height: 32px;
+    width: 52px;
+    font-size: .9em;
+  }
+  
+  .col-xs-12 .func {
+    height: 28px;
+    width: 48px;
+  }
 }
 
-.col-xs-12 .func {
-  height: 25px;
-  width: 45px;
+@media(min-width: 768px) {
+  .col-sm-4 button{
+    height: 40px;
+    width: 60px;
+    font-size: 1.2em;
+  }
+  
+  .col-sm-4 .func {
+    height: 35px;
+    width: 55px;
+  }
 }
 
-.col-sm-4 button{
-  height: 40px;
-  width: 60px;
-  font-size: 1.2em;
-}
-
-.col-sm-4 .func {
-  height: 35px;
-  width: 55px;
-}
