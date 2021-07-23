@@ -1,4 +1,4 @@
-(function(){
+(function () {
   let screen = document.querySelector('.screen');
   let buttons = document.querySelectorAll('.butn');
   let clear = document.querySelector('.btn-clear');
@@ -11,17 +11,17 @@
   let nPr = document.querySelector('.btn-nPr');
   let nCr = document.querySelector('.btn-nCr');
   let exp = document.querySelector('.btn-exp');
-  
+
   //retrieve data from numbers that are clicked
-  buttons.forEach(function(button){
-    button.addEventListener('click', function(e){
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function (e) {
       let value = e.target.dataset.num;
       screen.value += value;
     })
   });
-  
-  equal.addEventListener('click', function(e){
-    if(screen.value === ''){
+
+  equal.addEventListener('click', function (e) {
+    if (screen.value === '') {
       screen.value = 'Please Enter a Value: ';
     } else {
       let answer = eval(screen.value);
@@ -29,9 +29,9 @@
     }
   })
 
-  document.addEventListener('keypress', function(e){
+  document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      if(screen.value === ''){
+      if (screen.value === '') {
         screen.value = 'Please Enter a Value: ';
       } else {
         let answer = eval(screen.value);
@@ -39,49 +39,44 @@
       }
     }
   })
-  
-  clear.addEventListener('click', function(e){
+
+  clear.addEventListener('click', function (e) {
     screen.value = '';
   })
 
-  del.addEventListener('click', function(e){
-    screen.value = screen.value.substring(0, (screen.value).length-1);
+  del.addEventListener('click', function (e) {
+    screen.value = screen.value.substring(0, (screen.value).length - 1);
   })
 
-  pi.addEventListener('click', function(e){
+  pi.addEventListener('click', function (e) {
     screen.value += Math.PI;
   })
 
-  perc.addEventListener('click', function(e){
-    let aux = screen.value;
-    screen.value += '%'
-    document.querySelector('.btn-equal').addEventListener('click', function(e) {
-      let answer = aux/100;
-      screen.value = +(answer).toFixed(5);
-    })
-  })
-
-  ln.addEventListener('click', function(e){
+  ln.addEventListener('click', function (e) {
     screen.value += 'ln(';
-    document.querySelector('.btn-equal').addEventListener('click', function(e) {
+    document.querySelector('.btn-equal').addEventListener('click', function (e) {
       let answer = eval(parseFloat((Math.log((screen.value).substring(3, (screen.value).length)))));
       screen.value = +(answer).toFixed(5);
     })
   })
-  
-  fact.addEventListener('click', function(e){
+
+  perc.addEventListener('click', function (e) {
+    screen.value /= 100;
+  })
+
+  fact.addEventListener('click', function (e) {
     let aux = screen.value;
     screen.value += '!';
-    document.querySelector('.btn-equal').addEventListener('click', function(e) {
+    document.querySelector('.btn-equal').addEventListener('click', function (e) {
       let answer = factorial(aux);
       screen.value = +(answer).toFixed(5);
     })
   })
 
-  nPr.addEventListener('click', function(e) {
+  nPr.addEventListener('click', function (e) {
     let aux = screen.value;
     screen.value += 'P';
-    document.querySelector('.btn-equal').addEventListener('click', function(e) {
+    document.querySelector('.btn-equal').addEventListener('click', function (e) {
       let r = parseFloat((screen.value).substring(aux.length + 1, (screen.value).length));
       let p1 = factorial(aux);
       let p2 = factorial(aux - r);
@@ -89,11 +84,11 @@
       screen.value = +(answer).toFixed(5);
     })
   })
- 
-  nCr.addEventListener('click', function(e) {
+
+  nCr.addEventListener('click', function (e) {
     let aux = screen.value;
     screen.value += 'C';
-    document.querySelector('.btn-equal').addEventListener('click', function(e) {
+    document.querySelector('.btn-equal').addEventListener('click', function (e) {
       let r = parseFloat((screen.value).substring(aux.length + 1, (screen.value).length));
       console.log(r);
       let p1 = factorial(aux);
@@ -103,11 +98,11 @@
     })
   })
 
-  exp.addEventListener('click', function(e) {
+  exp.addEventListener('click', function (e) {
     let aux = screen.value;
     screen.value += '**';
-    document.querySelector('.btn-equal').addEventListener('click', function(e) {
-      let answer = eval(parseFloat(scrren.value));
+    document.querySelector('.btn-equal').addEventListener('click', function (e) {
+      let answer = eval(parseFloat(screen.value));
       screen.value = +(answer).toFixed(5);
     })
   })
