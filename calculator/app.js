@@ -90,7 +90,6 @@
     screen.value += 'C';
     document.querySelector('.btn-equal').addEventListener('click', function (e) {
       let r = parseFloat((screen.value).substring(aux.length + 1, (screen.value).length));
-      console.log(r);
       let p1 = factorial(aux);
       let p2 = factorial(r) * factorial(aux - r);
       let answer = p1 / p2;
