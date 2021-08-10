@@ -108,7 +108,7 @@ submit.addEventListener('click', function() {
     s9.innerHTML = "<span class='i'>Wrong<span>";
   }
 
-  if (q10 == "red") {
+  if (q10.toLowerCase() == "red") {
     count++;
     s10.innerHTML = "<span class='c'>Correct<span>";
   } else {
