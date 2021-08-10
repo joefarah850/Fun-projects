@@ -68,7 +68,7 @@ submit.addEventListener('click', function() {
     s4.innerHTML = "<span class='i'>Wrong<span>";
   }
 
-  if (q5.toLowerCase() == "perez" || q4.toLowerCase() == "sergio perez" || q5.toLowerCase() == "checo" || q5.toLowerCase() == "checo perez") {
+  if (q5.toLowerCase() == "perez" || q5.toLowerCase() == "sergio perez" || q5.toLowerCase() == "checo" || q5.toLowerCase() == "checo perez") {
     count++;
     s5.innerHTML = "<span class='c'>Correct<span>";
   } else {
