@@ -78,9 +78,7 @@
     screen.value += 'P';
     document.querySelector('.btn-equal').addEventListener('click', function (e) {
       let r = parseFloat((screen.value).substring(aux.length + 1, (screen.value).length));
-      let p1 = factorial(aux);
-      let p2 = factorial(aux - r);
-      let answer = p1 / p2;
+      let answer = factorial(aux) / factorial(aux - r);
       screen.value = +(answer).toFixed(5);
     })
   })
