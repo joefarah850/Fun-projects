@@ -50,7 +50,7 @@ ul li label {
 }
 
 input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button {
@@ -129,4 +129,6 @@ ol {
   .quiz-container {
     border-radius: 0px;
   }
+
+
 }
