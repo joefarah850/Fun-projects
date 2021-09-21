@@ -2,6 +2,8 @@
 #include <random>
 #include <fstream>
 
+// cd "/Users/joefarah/Desktop/Fun-projects/hangman/" && g++ hangman.cpp -o hangman && "/Users/joefarah/Desktop/Fun-projects/hangman/"hangman
+
 using namespace std;
 
 int wrong = 0;
@@ -35,7 +37,7 @@ int main() {
   while (wrong < 10) {
     cout << "Word to guess: ";
     for (int i = 0; i < word.length(); ++i) {
-    cout << letters[i] << " ";
+      cout << letters[i] << " ";
     }
     cout << endl;
 
