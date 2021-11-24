@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 23, 2021 21:00:00").getTime()
+var countDownDate = new Date("May 16, 2022 20:00:00").getTime()
 
 var x = setInterval(function() {
 
