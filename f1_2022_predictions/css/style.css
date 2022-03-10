@@ -139,7 +139,94 @@ button {
 }
 
 #logo {
-  left: 350px;
+  left: 375px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+#logo1 {
+  left: 675px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+#logo2 {
+  left: 975px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo3 {
+  left: 1275px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo4 {
+  left: 1575px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo5 {
+  left: 1875px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo6 {
+  left: 2175px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo7 {
+  left: 2475px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo8 {
+  left: 2775px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo9 {
+  left: 3075px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo10 {
+  left: 3375px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+#logo11 {
+  left: 3675px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo12 {
+  left: 3975px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo13 {
+  left: 4275px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo14 {
+  left: 4575px;
   top: -15px;
   width: 250px;
   height: 200px;
@@ -156,6 +243,10 @@ button {
     top: 620px;
   }
   
+  #pred {
+    text-align: left;
+    margin-left: 270px;
+  }
 
   #PredBtn {
     position: absolute;
@@ -182,6 +273,51 @@ button {
 
   #logo {
     left: 10px;
+    top: -40px;
+  }
+
+  #logo1 {
+    top: -40px;
+  }
+  
+  #logo2 {
+    top: -40px;
+  }
+  #logo3 {
+    top: -40px;
+  }
+  #logo4 {
+    top: -40px;
+  }
+  #logo5 {
+    top: -40px;
+  }
+  #logo6 {
+    top: -40px;
+  }
+  #logo7 {
+    top: -40px;
+  }
+  #logo8 {
+    top: -40px;
+  }
+  #logo9 {
+    top: -40px;
+  }
+  #logo10 {
+    top: -40px;
+  }
+  
+  #logo11 {
+    top: -40px;
+  }
+  #logo12 {
+    top: -40px;
+  }
+  #logo13 {
+    top: -40px;
+  }
+  #logo14 {
     top: -40px;
   }
 
