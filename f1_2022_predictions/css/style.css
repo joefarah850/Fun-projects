@@ -55,14 +55,17 @@ select {
 }
 
 #Submit {
+  -webkit-appearance: none !important;
   left: 115px;
   font-size: 150%;
   margin-top: 30px;
   position: relative;
   text-align: left;
   color: white;
-  width: 120px;
-  height: 50px;
+  /* width: 120px;
+  height: 50px; */
+  text-align: -webkit-center !important;
+  text-align: center !important;
   border-radius: 10px;
   border: 2px solid red;
   background-color: red;
@@ -242,6 +245,8 @@ button {
     position: relative;
     left: 1200px;
     top: 620px;
+    width: 120px;
+    height: 50px;
   }
   
   #pred {
