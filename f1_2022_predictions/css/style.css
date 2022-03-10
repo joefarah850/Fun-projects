@@ -55,9 +55,10 @@ select {
 }
 
 #Submit {
-  margin-left: 110px;
+  left: 115px;
   font-size: 150%;
   margin-top: 30px;
+  position: relative;
   text-align: center;
   color: white;
   width: 120px;
@@ -148,6 +149,13 @@ button {
   li {
     margin-left: 50px;
   }
+
+  #Submit {
+    position: relative;
+    left: 1200px;
+    top: 620px;
+  }
+  
 
   #PredBtn {
     position: absolute;
