@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="row">
+          <p>CASIO</p>
+          <p id="disclaimer">Use the AC button after each calculation!</p>
+          <div class="col-xs-12">
+            <!-- Calculator Screen -->
+            <textarea rows="20" cols="50" type="text" class="screen"></textarea>
+          </div>
+
+          <!-- Calculator buttons -->
+
+          <div class="col-xs-12">
+            <button type="button" class="btn-ln func">ln</button>
+            <button type="button" class="btn-factorial func">!</button>
+            <button type="button" class="btn-exp func">^</button>
+            <button type="button" class="btn-nPr func">nPr</button>
+            <button type="button" class="btn-nCr func">nCr</button>
+          </div>
+          <div class="col-xs-12">
+            <button type="button" class="butn num-ops" data-num="7">7</button>
+            <button type="button" class="butn num-ops" data-num="8">8</button>
+            <button type="button" class="butn num-ops" data-num="9">9</button>
+            <button type="button" class="btn-del other">DEL</button>
+            <button type="button" class="btn-clear other">AC</button>
+          </div>
+          <div class="col-xs-12">
+            <button type="button" class="butn num-ops" data-num="4">4</button>
+            <button type="button" class="butn num-ops" data-num="5">5</button>
+            <button type="button" class="butn num-ops" data-num="6">6</button>
+            <button type="button" class="butn num-ops" data-num="*">x</button>
+            <button type="button" class="butn num-ops" data-num="/">/</button>
+          </div>
+          <div class="col-xs-12">
+            <button type="button" class="butn num-ops" data-num="1">1</button>
+            <button type="button" class="butn num-ops" data-num="2">2</button>
+            <button type="button" class="butn num-ops" data-num="3">3</button>
+            <button type="button" class="butn num-ops" data-num="+">+</button>
+            <button type="button" class="butn num-ops" data-num="-">-</button>
+          </div>
+          <div class="col-xs-12">
+            <button type="button" class="butn num-ops" data-num="0">0</button>
+            <button type="button" class="butn num-ops" data-num=".">.</button>
+            <button type="button" class="btn-pi num-ops">&pi;</button>
+            <button type="button" class="btn-percent num-ops">%</button>
+            <button type="button" class="btn-equal num-ops">=</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

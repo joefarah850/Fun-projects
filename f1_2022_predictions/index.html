@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+  <title>F1 2022 Predictions</title>
+</head>
+<body>
+  <span>
+    <img src="F1-logo.png">
+  </span>
+  <h1>F1 2022 Predictions</h1>
+  <label>Name</label> <input type="text" id="name">
+  <h3 id="DriversH">F1 2022 Drivers' Championship</h3>
+  <ol id="Drivers">
+    <li>
+      <select id="Drivers1" onchange="changeValueD('Drivers1')"></select>
+    </li>
+    <li>
+      <select id="Drivers2" onchange="changeValueD('Drivers2')"></select>
+    </li>
+    <li>
+      <select id="Drivers3" onchange="changeValueD('Drivers3')"></select>
+    </li>
+    <li>
+      <select id="Drivers4" onchange="changeValueD('Drivers4')"></select>
+    </li>
+    <li>
+      <select id="Drivers5" onchange="changeValueD('Drivers5')"></select>
+    </li>
+    <li>
+      <select id="Drivers6" onchange="changeValueD('Drivers6')"></select>
+    </li>
+    <li>
+      <select id="Drivers7" onchange="changeValueD('Drivers7')"></select>
+    </li>
+    <li>
+      <select id="Drivers8" onchange="changeValueD('Drivers8')"></select>
+    </li>
+    <li>
+      <select id="Drivers9" onchange="changeValueD('Drivers9')"></select>
+    </li>
+    <li>
+      <select id="Drivers10" onchange="changeValueD('Drivers10')"></select>
+    </li>
+    <li>
+      <select id="Drivers11" onchange="changeValueD('Drivers11')"></select>
+    </li>
+    <li>
+      <select id="Drivers12" onchange="changeValueD('Drivers12')"></select>
+    </li>
+    <li>
+      <select id="Drivers13" onchange="changeValueD('Drivers13')"></select>
+    </li>
+    <li>
+      <select id="Drivers14" onchange="changeValueD('Drivers14')"></select>
+    </li>
+    <li>
+      <select id="Drivers15" onchange="changeValueD('Drivers15')"></select>
+    </li>
+    <li>
+      <select id="Drivers16" onchange="changeValueD('Drivers16')"></select>
+    </li>
+    <li>
+      <select id="Drivers17" onchange="changeValueD('Drivers17')"></select>
+    </li>
+    <li>
+      <select id="Drivers18" onchange="changeValueD('Drivers18')"></select>
+    </li>
+    <li>
+      <select id="Drivers19" onchange="changeValueD('Drivers19')"></select>
+    </li>
+    <li>
+      <select id="Drivers20" onchange="changeValueD('Drivers20')"></select>
+    </li>
+  </ol>
+  <h3 id="ConstructorsH">F1 2022 Constructors' Championship</h3>
+  <ol id="Constructors">
+    <li>
+      <select id="Const1" onchange="changeValueC('Const1')"></select>
+    </li>
+    <li>
+      <select id="Const2" onchange="changeValueC('Const2')"></select>
+    </li>
+    <li>
+      <select id="Const3" onchange="changeValueC('Const3')"></select>
+    </li>
+    <li>
+      <select id="Const4" onchange="changeValueC('Const4')"></select>
+    </li>
+    <li>
+      <select id="Const5" onchange="changeValueC('Const5')"></select>
+    </li>
+    <li>
+      <select id="Const6" onchange="changeValueC('Const6')"></select>
+    </li>
+    <li>
+      <select id="Const7" onchange="changeValueC('Const7')"></select>
+    </li>
+    <li>
+      <select id="Const8" onchange="changeValueC('Const8')"></select>
+    </li>
+    <li>
+      <select id="Const9" onchange="changeValueC('Const9')"></select>
+    </li>
+    <li>
+      <select id="Const10" onchange="changeValueC('Const10')"></select>
+    </li>
+  </ol>
+  <button id="Submit">Submit</button>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDNEUS6xVHyTyDcjBOijt5gRJLMnlIxwwM",
+      authDomain: "f1-2022-predictions-67d0a.firebaseapp.com",
+      projectId: "f1-2022-predictions-67d0a",
+      storageBucket: "f1-2022-predictions-67d0a.appspot.com",
+      messagingSenderId: "192807461135",
+      appId: "1:192807461135:web:47b388cf86523e414a5e7a"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    import { getDatabase, ref, set, get, child }
+    from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
+
+    const db = getDatabase();
+
+    var name = document.getElementById("name");
+
+    var driver1 = document.getElementById("Drivers1");
+    var driver2 = document.getElementById("Drivers2");
+    var driver3 = document.getElementById("Drivers3");
+    var driver4 = document.getElementById("Drivers4");
+    var driver5 = document.getElementById("Drivers5");
+    var driver6 = document.getElementById("Drivers6");
+    var driver7 = document.getElementById("Drivers7");
+    var driver8 = document.getElementById("Drivers8");
+    var driver9 = document.getElementById("Drivers9");
+    var driver10 = document.getElementById("Drivers10");
+    var driver11 = document.getElementById("Drivers11");
+    var driver12 = document.getElementById("Drivers12");
+    var driver13 = document.getElementById("Drivers13");
+    var driver14 = document.getElementById("Drivers14");
+    var driver15 = document.getElementById("Drivers15");
+    var driver16 = document.getElementById("Drivers16");
+    var driver17 = document.getElementById("Drivers17");
+    var driver18 = document.getElementById("Drivers18");
+    var driver19 = document.getElementById("Drivers19");
+    var driver20 = document.getElementById("Drivers20");
+
+    var const1 = document.getElementById("Const1");
+    var const2 = document.getElementById("Const2");
+    var const3 = document.getElementById("Const3");
+    var const4 = document.getElementById("Const4");
+    var const5 = document.getElementById("Const5");
+    var const6 = document.getElementById("Const6");
+    var const7 = document.getElementById("Const7");
+    var const8 = document.getElementById("Const8");
+    var const9 = document.getElementById("Const9");
+    var const10 = document.getElementById("Const10");
+
+    var subBtn = document.getElementById("Submit");
+
+    
+
+
+    function InsertData() {
+      var data = [name.value, driver1.value,driver2.value,driver3.value,driver4.value,driver5.value,driver6.value,driver7.value,driver8.value, driver9.value, driver10.value,driver11.value,driver12.value,driver13.value,driver14.value,driver15.value,driver16.value,driver17.value,driver18.value,driver19.value,driver20.value, const1.value,const2.value,const3.value,const4.value,const5.value,const6.value,const7.value,const8.value,const9.value, const10.value];
+
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].length == 0) {
+          alert("Empty Field Detected!");
+          return;
+        }
+      }
+      set(ref(db, "User/" + name.value), {
+        name: name.value,
+        driver1: driver1.value,
+        driver2: driver2.value,
+        driver3: driver3.value,
+        driver4: driver4.value,
+        driver5: driver5.value,
+        driver6: driver6.value,
+        driver7: driver7.value,
+        driver8: driver8.value,
+        driver9: driver9.value,
+        driver10: driver10.value,
+        driver11: driver11.value,
+        driver12: driver12.value,
+        driver13: driver13.value,
+        driver14: driver14.value,
+        driver15: driver15.value,
+        driver16: driver16.value,
+        driver17: driver17.value,
+        driver18: driver18.value,
+        driver19: driver19.value,
+        driver20: driver20.value,
+
+        const1: const1.value,
+        const2: const2.value,
+        const3: const3.value,
+        const4: const4.value,
+        const5: const5.value,
+        const6: const6.value,
+        const7: const7.value,
+        const8: const8.value,
+        const9: const9.value,
+        const10: const10.value
+      })
+      .then(() => {
+        alert("Data Stored Successfully!");
+      })
+      .catch((error) => {
+        alert("Unsuccessful, error " + error);
+      });
+    
+      document.body.innerHTML = "<div id='PredBtn'> <button id='ViewPerc' onclick=\"location.href = 'Percentage.html'\">View All Predictions</button> </div>";
+    }
+
+    subBtn.addEventListener("click", InsertData);
+  </script>
+</body>
+</html>

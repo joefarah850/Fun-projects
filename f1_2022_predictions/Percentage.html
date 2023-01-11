@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>All Predictions</title>
+</head>
+<body id="body2">
+  <span>
+    <img id="logo" src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo1" src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo2"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo3"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo4"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo5"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo6"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo7"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo8"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo9"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo10"src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo11" src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo12" src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo13" src="F1-logo.png">
+  </span>
+  <span>
+    <img id="logo14" src="F1-logo.png">
+  </span>
+    <h1 id="pred">F1 2022 Predictions</h1>
+    <table>
+      <tr>
+        <th rowspan="2" id="NAME">Name</th>
+        <th colspan="20" id="D">Drivers' Championship</th>
+        <th colspan="10" id="C">Constructors' Championship</th>
+      </tr>
+      <tr>
+        <td>1st</td>
+        <td>2nd</td>
+        <td>3rd</td>
+        <td>4th</td>
+        <td>5th</td>
+        <td>6th</td>
+        <td>7th</td>
+        <td>8th</td>
+        <td>9th</td>
+        <td>10th</td>
+        <td>11th</td>
+        <td>12th</td>
+        <td>13th</td>
+        <td>14th</td>
+        <td>15th</td>
+        <td>16th</td>
+        <td>17th</td>
+        <td>18th</td>
+        <td>19th</td>
+        <td>20th</td>
+        <td>1st</td>
+        <td>2nd</td>
+        <td>3rd</td>
+        <td>4th</td>
+        <td>5th</td>
+        <td>6th</td>
+        <td>7th</td>
+        <td>8th</td>
+        <td>9th</td>
+        <td>10th</td>
+      </tr>
+      <tbody id="tbody1">
+      </tbody>
+    </table>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDNEUS6xVHyTyDcjBOijt5gRJLMnlIxwwM",
+      authDomain: "f1-2022-predictions-67d0a.firebaseapp.com",
+      projectId: "f1-2022-predictions-67d0a",
+      storageBucket: "f1-2022-predictions-67d0a.appspot.com",
+      messagingSenderId: "192807461135",
+      appId: "1:192807461135:web:47b388cf86523e414a5e7a"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    const db = getDatabase();
+
+    import { getDatabase, ref, onValue, get, child }
+    from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
+
+    function getData() {
+      const dbref = ref(db);
+      get(child(dbref, 'User')).then((snapshot) => {
+        var users = [];
+
+        snapshot.forEach(childSnapshot => {
+          users.push(childSnapshot.val())
+        });
+        addAllItemsToTable(users);
+      });
+    }
+
+    var tbody = document.getElementById('tbody1');
+
+    function addAllItemsToTable(users) {
+      users.forEach(e => {
+        addItemToTable(e.name, e.driver1, e.driver2, e.driver3, e.driver4, e.driver5, e.driver6, e.driver7, e.driver8, e.driver9, e.driver10, e.driver11, e.driver12, e.driver13, e.driver14, e.driver15, e.driver16, e.driver17, e.driver18, e.driver19, e.driver20, e.const1, e.const2, e.const3, e.const4, e.const5, e.const6, e.const7, e.const8, e.const9, e.const10);
+      });
+    }
+
+    function addItemToTable(name, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) {
+      let tr = document.createElement('tr');
+      let td1 = document.createElement('td');
+      let td2 = document.createElement('td');
+      let td3 = document.createElement('td');
+      let td4 = document.createElement('td');
+      let td5 = document.createElement('td');
+      let td6 = document.createElement('td');
+      let td7 = document.createElement('td');
+      let td8 = document.createElement('td');
+      let td9 = document.createElement('td');
+      let td10 = document.createElement('td');
+      let td11 = document.createElement('td');
+      let td12 = document.createElement('td');
+      let td13 = document.createElement('td');
+      let td14 = document.createElement('td');
+      let td15 = document.createElement('td');
+      let td16 = document.createElement('td');
+      let td17 = document.createElement('td');
+      let td18 = document.createElement('td');
+      let td19 = document.createElement('td');
+      let td20 = document.createElement('td');
+      let td21 = document.createElement('td');
+      let td22 = document.createElement('td');
+      let td23 = document.createElement('td');
+      let td24 = document.createElement('td');
+      let td25 = document.createElement('td');
+      let td26 = document.createElement('td');
+      let td27 = document.createElement('td');
+      let td28 = document.createElement('td');
+      let td29 = document.createElement('td');
+      let td30 = document.createElement('td');
+      let td31 = document.createElement('td');
+
+      td1.innerHTML = `<div> ${name} </div>`;
+      td2.innerHTML = `<div> ${d1} </div>`;
+      td3.innerHTML = `<div> ${d2} </div>`;
+      td4.innerHTML = `<div> ${d3} </div>`;
+      td5.innerHTML = `<div> ${d4} </div>`;
+      td6.innerHTML = `<div> ${d5} </div>`;
+      td7.innerHTML = `<div> ${d6} </div>`;
+      td8.innerHTML = `<div> ${d7} </div>`;
+      td9.innerHTML = `<div> ${d8} </div>`;
+      td10.innerHTML = `<div> ${d9} </div>`;
+      td11.innerHTML = `<div> ${d10} </div>`;
+      td12.innerHTML = `<div> ${d11} </div>`;
+      td13.innerHTML = `<div> ${d12} </div>`;
+      td14.innerHTML = `<div> ${d13} </div>`;
+      td15.innerHTML = `<div> ${d14} </div>`;
+      td16.innerHTML = `<div> ${d15} </div>`;
+      td17.innerHTML = `<div> ${d16} </div>`;
+      td18.innerHTML = `<div> ${d17} </div>`;
+      td19.innerHTML = `<div> ${d18} </div>`;
+      td20.innerHTML = `<div> ${d19} </div>`;
+      td21.innerHTML = `<div> ${d20} </div>`;
+      td22.innerHTML = `<div> ${c1} </div>`;
+      td23.innerHTML = `<div> ${c2} </div>`;
+      td24.innerHTML = `<div> ${c3} </div>`;
+      td25.innerHTML = `<div> ${c4} </div>`;
+      td26.innerHTML = `<div> ${c5} </div>`;
+      td27.innerHTML = `<div> ${c6} </div>`;
+      td28.innerHTML = `<div> ${c7} </div>`;
+      td29.innerHTML = `<div> ${c8} </div>`;
+      td30.innerHTML = `<div> ${c9} </div>`;
+      td31.innerHTML = `<div> ${c10} </div>`;
+      
+
+      tr.appendChild(td1);
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      tr.appendChild(td4);
+      tr.appendChild(td5);
+      tr.appendChild(td6);
+      tr.appendChild(td7);
+      tr.appendChild(td8);
+      tr.appendChild(td9);
+      tr.appendChild(td10);
+      tr.appendChild(td11);
+      tr.appendChild(td11);
+      tr.appendChild(td12);
+      tr.appendChild(td13);
+      tr.appendChild(td14);
+      tr.appendChild(td15);
+      tr.appendChild(td16);
+      tr.appendChild(td17);
+      tr.appendChild(td18);
+      tr.appendChild(td19);
+      tr.appendChild(td20);
+      tr.appendChild(td21);
+      tr.appendChild(td21);
+      tr.appendChild(td22);
+      tr.appendChild(td23);
+      tr.appendChild(td24);
+      tr.appendChild(td25);
+      tr.appendChild(td26);
+      tr.appendChild(td27);
+      tr.appendChild(td28);
+      tr.appendChild(td29);
+      tr.appendChild(td30);
+      tr.appendChild(td31);
+
+      tbody.appendChild(tr);
+    }
+
+
+
+    (function () {
+      getData();
+    })();
+
+
+  </script>
+</body>
+</html>

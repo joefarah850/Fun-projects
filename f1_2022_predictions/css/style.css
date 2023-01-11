@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "F1";
+  src: url("Formula1-Bold.ttf");
+}
+
+body {
+  padding: 20px;
+  font-family: F1;
+  background-color: #15151e;
+  color: white;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+label {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+input {
+  margin-left: 5px;
+}
+
+ol {
+  margin-left: 57px;
+}
+
+li {
+  margin-top: 10px;
+  font-size: 90%;
+}
+
+select {
+  width: 165px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: white;
+  background-color: #15151e;
+}
+
+#name {
+  background-color: #15151e;
+  color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+#Submit {
+  -webkit-appearance: none !important;
+  left: 100px;
+  font-size: 150%;
+  margin-top: 30px;
+  position: relative;
+  text-align: left;
+  color: white;
+  /* width: 120px;
+  height: 50px; */
+  text-align: -webkit-center !important;
+  text-align: center !important;
+  border-radius: 10px;
+  border: 2px solid red;
+  background-color: red;
+}
+
+#pred {
+  margin-bottom: 40px;
+}
+
+#body2 {
+  padding: 0;
+  padding-top: 5px;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  left: -20px;
+  top: -10px
+}
+
+table, tr, td, th {
+  border: 2px solid red;
+  text-align: center;
+  table-layout: fixed;
+}
+
+#D, #C {
+  text-align: left;
+  padding-left: 30px;
+}
+
+th {
+  height: 50px;
+  font-size: 140%;
+}
+
+
+td {
+  padding: 5px;
+  height: 40px;
+}
+
+td div {
+  width: 150px;
+}
+
+#PredBtn {
+  position: absolute;
+  background-color: red;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  left: 45px;
+  top: 222px;
+}
+
+button {
+  box-shadow: 1px 1px 5px white;
+}
+
+#ViewPerc {
+  color: white;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  left: 50px;
+  top: 80px;
+  border: 2px solid #15151e;
+  box-shadow: 1px 1px 5px white;
+  background-color: #15151e;
+}
+
+#logo {
+  left: 375px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+#logo1 {
+  left: 675px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+#logo2 {
+  left: 975px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo3 {
+  left: 1275px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo4 {
+  left: 1575px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo5 {
+  left: 1875px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo6 {
+  left: 2175px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo7 {
+  left: 2475px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo8 {
+  left: 2775px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo9 {
+  left: 3075px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo10 {
+  left: 3375px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+#logo11 {
+  left: 3675px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo12 {
+  left: 3975px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo13 {
+  left: 4275px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+#logo14 {
+  left: 4575px;
+  top: -15px;
+  width: 250px;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  li {
+    margin-left: 50px;
+  }
+
+  #Submit {
+    text-align: center;
+    position: relative;
+    left: 1200px;
+    top: 620px;
+    width: 120px;
+    height: 50px;
+  }
+  
+  #pred {
+    text-align: left;
+    margin-left: 270px;
+  }
+
+  #PredBtn {
+    position: absolute;
+    background-color: red;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    left: 470px;
+    top: 230px;
+  }
+
+  #ViewPerc {
+    color: white;
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    left: 150px;
+    top: 110px;
+    border: 2px solid #15151e;
+    box-shadow: 1px 1px 5px white;
+    background-color: #15151e;
+  }
+
+  #logo {
+    left: 10px;
+    top: -40px;
+  }
+
+  #logo1 {
+    top: -40px;
+  }
+  
+  #logo2 {
+    top: -40px;
+  }
+  #logo3 {
+    top: -40px;
+  }
+  #logo4 {
+    top: -40px;
+  }
+  #logo5 {
+    top: -40px;
+  }
+  #logo6 {
+    top: -40px;
+  }
+  #logo7 {
+    top: -40px;
+  }
+  #logo8 {
+    top: -40px;
+  }
+  #logo9 {
+    top: -40px;
+  }
+  #logo10 {
+    top: -40px;
+  }
+  
+  #logo11 {
+    top: -40px;
+  }
+  #logo12 {
+    top: -40px;
+  }
+  #logo13 {
+    top: -40px;
+  }
+  #logo14 {
+    top: -40px;
+  }
+
+  li:nth-child(n+6) {
+    position: relative;
+    margin-left: 350px;
+  }
+
+  li:nth-child(6) {
+    margin-top: -190px;
+  }
+
+  li:nth-child(n+11) {
+    position: relative;
+    margin-left: 650px;
+  }
+
+  li:nth-child(11) {
+    margin-top: -190px;
+  }
+
+  li:nth-child(n+16) {
+    position: relative;
+    margin-left: 950px;
+  }
+
+  li:nth-child(16) {
+    margin-top: -190px;
+  }
+
+  #Drivers {
+    margin-left: 80px;
+  }
+
+  #Constructors {
+    margin-left: 380px;
+  }
+
+  #Submit {
+    position: absolute;
+    right: 120px;
+    bottom: 40px;
+  }
+
+  img {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 1050px;
+    top: -10px;
+  }
+}
